@@ -1,0 +1,374 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ресторан</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <style>
+        body {
+            background: linear-gradient(45deg, #FFC371, #FF5F6D);
+        }
+        
+        .dish-description {
+            display: none;
+        }
+        
+        .show {
+            display: block;
+        }
+    </style>
+    <script>
+        function toggleDescription(event) {
+            const dish = event.currentTarget.parentNode;
+            const description = dish.querySelector('.dish-description');
+            description.classList.toggle('show');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1 class="site-title">Ароматне джерело</h1>
+        <nav>
+    <ul class="navigation">
+        <li><a href="#hot-dishes">Гарячі страви</a></li>
+        <li><a href="#desserts">Десерти</a></li>
+        <li><a href="#drinks">Напої</a></li>
+    </ul>
+</nav>
+    </header>
+    <main>
+        <section>
+        <section id="hot-dishes">
+            <h2>Гарячі страви</h2>
+            <div class="menu-grid">
+                <div class="dish">
+                    <img src="Immages/SupFric.jpg" alt="Суп 1">
+                    <h4>Суп з Фрикадельками</h4>
+                    <p class="price">150 грн</p>
+                    <button class="description-toggle" onclick="toggleDescription(event)">Показати склад</button>
+                    <div class="dish-description">
+                        <h4>Суп з фрикадельками</h4>
+                             <p>Склад:</p>
+                        <ul>
+                             <li>Фарш (яловичий або свинячий)</li>
+                             <li>Морква</li>
+                             <li>Перець</li>
+                             <li>Цибуля</li>
+                             <li>Спеції за смаком</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <img src="Immages/SupGrib.jpg" alt="Суп 2">
+                    <h4>Грибний суп</h4>
+                    <p class="price">120 грн</p>
+                    <button class="description-toggle" onclick="toggleDescription(event)">Показати опис</button>
+                    <div class="dish-description">
+                        <h4>Грибний суп</h4>
+                            <p>Склад:</p>
+                          <ul>
+                             <li>Гриби (шампіньйони, білі або лісові)</li>
+                             <li>Цибуля</li>
+                             <li>Морква</li>
+                             <li>Картопля</li>
+                             <li>Сметана</li>
+                             <li>Зелень</li>
+                             <li>Спеції за смаком</li>
+                          </ul>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <img src="Immages/SupZelen.jpg" alt="Суп 3">
+                    <h4>Гороховий суп з цвітною капустою</h4>
+                    <p class="price">140 грн</p>
+                    <button class="description-toggle" onclick="toggleDescription(event)">Показати опис</button>
+                    <div class="dish-description">
+                         <h4>Гороховий суп з цвітною капустою</h4>
+                            <p>Склад:</p>
+                         <ul>
+                            <li>Горох</li>
+                            <li>Цвітна капуста</li>
+                            <li>Морква</li>
+                            <li>Цибуля</li>
+                            <li>Сіль, перець</li>
+                            <li>Спеції за смаком</li>
+                         </ul>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <img src="Immages/Borshch.jpg" alt="Суп 3">
+                    <h4>Борщ</h4>
+                    <p class="price">170 грн</p>
+                    <button class="description-toggle" onclick="toggleDescription(event)">Показати опис</button>
+                    <div class="dish-description">
+                         <h4>Борщ</h4>
+                           <p>Склад:</p>
+                         <ul>
+                           <li>Свинина (або інше м'ясо)</li>
+                           <li>Буряк</li>
+                           <li>Картопля</li>
+                           <li>Морква</li>
+                           <li>Цибуля</li>
+                           <li>Капуста</li>
+                           <li>Томатна паста</li>
+                           <li>Сіль, перець</li>
+                           <li>Бульйон (овочевий або м'ясний)</li>
+                           <li>Сметана (для подачі)</li>
+                         </ul>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <img src="Immages/BorZel.jpg" alt="Суп 3">
+                    <h4>Зелений борщ</h4>
+                    <p class="price">190 грн</p>
+                    <button class="description-toggle" onclick="toggleDescription(event)">Показати опис</button>
+                    <div class="dish-description">
+                         <h4>Зелений борщ</h4>
+                             <p>Склад:</p>
+                         <ul>
+                           <li>Шпинат</li>
+                           <li>Картопля</li>
+                           <li>Цибуля</li>
+                           <li>Часник</li>
+                           <li>Зелена цибуля</li>
+                           <li>Кроп</li>
+                           <li>Петрушка</li>
+                           <li>Сметана (для подачі)</li>
+                           <li>Сіль, перець</li>
+                           <li>Лимонний сік (опціонально)</li>
+                         </ul>
+                    </div>
+                </div>
+
+                 <div class="dish">
+                    <img src="Immages/GribSup.jpg" alt="Суп 3">
+                    <h4>Грибний суп з сухариками та сиром з пліснявою</h4>
+                    <p class="price">155 грн</p>
+                    <button class="description-toggle" onclick="toggleDescription(event)">Показати опис</button>
+                    <div class="dish-description">
+                          <h4>Грибний суп з сухариками та сиром з пліснявою</h4>
+                             <p>Склад:</p>
+                          <ul>
+                           <li>Гриби (порційні або свіжі)</li>
+                           <li>Цибуля</li>
+                           <li>Морква</li>
+                           <li>Картопля</li>
+                           <li>Сухарики</li>
+                           <li>Сир з пліснявою (наприклад, горгонзола або камамбер)</li>
+                           <li>Сіль, перець, спеції за смаком</li>
+                           <li>Зелень для прикраси</li>
+                          </ul>
+                    </div>
+                </div>
+        </section>
+        
+<section id="desserts">
+    <h2>Десерти</h2>
+    <div class="menu-grid">
+        <div class="dish">
+            <img src="Immages/Tiramisu.jpg" alt="Тірамісу">
+            <h4>Тірамісу</h4>
+            <p class="price">80 грн</p>
+            <button class="description-toggle" onclick="toggleDescription(event)">Показати склад</button>
+            <div class="dish-description">
+                <h4>Тірамісу</h4>
+                <p>Склад:</p>
+                <ul>
+                    <li>Бісквітні пальчики</li>
+                    <li>Кава</li>
+                    <li>Маскарпоне</li>
+                    <li>Какао порошок</li>
+                </ul>
+            </div>
+        </div>
+        <div class="dish">
+            <img src="Immages/Chis.jpg" alt="Чізкейк">
+            <h4>Чізкейк</h4>
+            <p class="price">90 грн</p>
+            <button class="description-toggle" onclick="toggleDescription(event)">Показати склад</button>
+            <div class="dish-description">
+                <h4>Чізкейк</h4>
+                <p>Склад:</p>
+                <ul>
+                    <li>Сир</li>
+                    <li>Кремовий сир</li>
+                    <li>Яйця</li>
+                    <li>Цукор</li>
+                    <li>Мука</li>
+                </ul>
+            </div>
+        </div>
+        <div class="dish">
+            <img src="Immages/panakota.jpg" alt="Панакота">
+            <h4>Панакота</h4>
+            <p class="price">70 грн</p>
+            <button class="description-toggle" onclick="toggleDescription(event)">Показати склад</button>
+            <div class="dish-description">
+                <h4>Панакота</h4>
+                <p>Склад:</p>
+                <ul>
+                    <li>Вершки</li>
+                    <li>Цукор</li>
+                    <li>Желатин</li>
+                    <li>Ваніль</li>
+                </ul>
+            </div>
+        </div>
+        <div class="dish">
+            <img src="Immages/mus.jpg" alt="Шоколадний мус">
+            <h4>Шоколадний мус</h4>
+            <p class="price">75 грн</p>
+            <button class="description-toggle" onclick="toggleDescription(event)">Показати склад</button>
+            <div class="dish-description">
+                <h4>Шоколадний мус</h4>
+                <p>Склад:</p>
+                <ul>
+                    <li>Темний шоколад</li>
+                    <li>Вершки</li>
+                    <li>Цукор</li>
+                    <li>Яйця</li>
+                </ul>
+            </div>
+        </div>
+        <div class="dish">
+            <img src="Immages/sorbet.jpg" alt="Фруктовий сорбет">
+            <h4>Фруктовий сорбет</h4>
+            <p class="price">60 грн</p>
+            <button class="description-toggle" onclick="toggleDescription(event)">Показати склад</button>
+            <div class="dish-description">
+                <h4>Фруктовий сорбет</h4>
+                <p>Склад:</p>
+                <ul>
+                    <li>Фруктовий сік</li>
+                    <li>Цукор</li>
+                    <li>Лимонний сік</li>
+                </ul>
+            </div>
+        </div>
+        <div class="dish">
+            <img src="Immages/Sharlotka.jpg" alt="Шарлотка">
+            <h4>Шарлотка</h4>
+            <p class="price">65 грн</p>
+            <button class="description-toggle" onclick="toggleDescription(event)">Показати склад</button>
+            <div class="dish-description">
+                <h4>Шарлотка</h4>
+                <p>Склад:</p>
+                <ul>
+                    <li>Яблука</li>
+                    <li>Мука</li>
+                    <li>Цукор</li>
+                    <li>Яйця</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="drinks">
+<section>
+    <h2>Напої</h2>
+    <div class="menu-grid">
+        <div class="dish">
+            <img src="Immages/Mohito.jpg" alt="Мохіто">
+            <h4>Мохіто</h4>
+            <p class="price">50 грн</p>
+            <button class="description-toggle" onclick="toggleDescription(event)">Показати склад</button>
+            <div class="dish-description">
+                <h4>Мохіто</h4>
+                <p>Склад:</p>
+                <ul>
+                    <li>Білий ром</li>
+                    <li>Лайм</li>
+                    <li>М'ята</li>
+                    <li>Цукор</li>
+                    <li>Содова</li>
+                </ul>
+            </div>
+        </div>
+        <div class="dish">
+            <img src="Immages/Espresso_BW_1.jpg" alt="Еспрессо">
+            <h4>Еспрессо</h4>
+            <p class="price">40 грн</p>
+            <button class="description-toggle" onclick="toggleDescription(event)">Показати склад</button>
+            <div class="dish-description">
+                <h4>Еспрессо</h4>
+                <p>Склад:</p>
+                <ul>
+                    <li>Кавові зерна</li>
+                    <li>Гаряча вода</li>
+                </ul>
+            </div>
+        </div>
+        <div class="dish">
+            <img src="Immages/fresh.jpg" alt="Фреш апельсиновий">
+            <h4>Фреш апельсиновий</h4>
+            <p class="price">60 грн</p>
+            <button class="description-toggle" onclick="toggleDescription(event)">Показати склад</button>
+            <div class="dish-description">
+                <h4>Фреш апельсиновий</h4>
+                <p>Склад:</p>
+                <ul>
+                    <li>Апельсини</li>
+                </ul>
+            </div>
+        </div>
+        <div class="dish">
+            <img src="Immages/matcha.jpg" alt="Матча латте">
+            <h4>Матча латте</h4>
+            <p class="price">70 грн</p>
+            <button class="description-toggle" onclick="toggleDescription(event)">Показати склад</button>
+            <div class="dish-description">
+                <h4>Матча латте</h4>
+                <p>Склад:</p>
+                <ul>
+                    <li>Матча порошок</li>
+                    <li>Молоко</li>
+                    <li>Цукор</li>
+                </ul>
+            </div>
+        </div>
+        <div class="dish">
+            <img src="Immages/smusi.jpg" alt="Манговий смузі">
+            <h4>Манговий смузі</h4>
+            <p class="price">55 грн</p>
+            <button class="description-toggle" onclick="toggleDescription(event)">Показати склад</button>
+            <div class="dish-description">
+                <h4>Манговий смузі</h4>
+                <p>Склад:</p>
+                <ul>
+                    <li>Манго</li>
+                    <li>Банан</li>
+                    <li>Молоко</li>
+                    <li>Мед</li>
+                </ul>
+            </div>
+        </div>
+        <div class="dish">
+            <img src="Immages/gor.jpg" alt="Горячий шоколад">
+            <h4>Горячий шоколад</h4>
+            <p class="price">45 грн</p>
+            <button class="description-toggle" onclick="toggleDescription(event)">Показати склад</button>
+            <div class="dish-description">
+                <h4>Горячий шоколад</h4>
+                <p>Склад:</p>
+                <ul>
+                    <li>Какао порошок</li>
+                    <li>Цукор</li>
+                    <li>Молоко</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    </main>
+    <footer>
+        <p>ПІ-21-1 Раззок Едуард</p>
+    </footer>
+</body>
+</html>
